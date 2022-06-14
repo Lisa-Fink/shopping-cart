@@ -1,0 +1,35 @@
+#home-container {
+    display: flex;
+    padding:80px 160px;
+    gap:40px;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+p {
+    color: rgb(55, 55, 55);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+#shop {
+    font-size: 40px;
+    padding: 30px 80px;
+    font-weight: bold;
+    color:rgb(200, 200, 200);
+    background-color: black;
+    margin-top: 40px;
+}
+
+#left > h2 > span {
+    font-size: 80px;
+    color:royalblue
+}
+
+.home-img {
+    border-radius: 40px;
+}
