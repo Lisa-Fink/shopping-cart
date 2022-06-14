@@ -30,13 +30,3 @@ h1 {
     font-size: 64px;
     color:royalblue
 }
-
-button {
-    font-size: 26px;
-    padding: 20px;
-    border-radius: 100px;
-    border: 0;
-}
- button:hover{
-    transform: scale(1.1);
-}

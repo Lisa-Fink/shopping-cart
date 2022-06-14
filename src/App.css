@@ -1,3 +1,13 @@
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+button {
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 100px;
+    border: 0;
+}
+ button:hover{
+    transform: scale(1.1);
+}
