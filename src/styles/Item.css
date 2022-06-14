@@ -1,0 +1,62 @@
+.img-container > img {
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.add {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.quantity-inpt {
+    width: 20px;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+.item-card {
+    box-shadow: 3px 3px 3px 3px rgb(151, 151, 151);
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.img-container {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+}
+
+.item-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.item-desc {
+   color: rgb(80, 80, 80);
+   font-style: italic;
+}
+
+.add {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.add:hover{
+    background-color: rgb(193, 193, 193);
+}
+
+.quantity {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
