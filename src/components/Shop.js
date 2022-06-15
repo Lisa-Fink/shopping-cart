@@ -9,18 +9,21 @@ const Shop = (props) => {
       name: 'Orange T-Shirt',
       desc: 'An orange t-shirt',
       img: 'images/shop/orange-t-shirt.png',
+      price: 19.99,
     },
     {
       key: 2,
       name: 'Red T-Shirt',
       desc: 'A red t-shirt',
       img: 'images/shop/red-t-shirt.png',
+      price: 19.99,
     },
     {
       key: 3,
       name: 'Red Floral Dress',
       desc: 'A beautiful dress',
       img: 'images/shop/red-floral-dress.jpg',
+      price: 79.99,
     },
   ];
   return (

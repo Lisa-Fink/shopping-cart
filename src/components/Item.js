@@ -30,6 +30,7 @@ const Item = (props) => {
       </div>
       <div className="item-name">{props.item.name}</div>
       <div className="item-desc">{props.item.desc}</div>
+      <div className="item-price">${props.item.price}</div>
       <Quantity quantity={quantity} setQuantity={setQuantity} />
       <button className="add" onClick={addToCart}>
         Add to Cart
