@@ -1,0 +1,35 @@
+.cart-img > img {
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.cart-img {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.cart-name {
+    font-size: 36px;
+}
+
+.cart-item > button {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.cart-price {
+    font-size: 22px;
+}
+
+.cart-item > .quantity > span, .cart-item > .quantity > input  {
+    align-self: center;
+}
