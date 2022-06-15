@@ -16,17 +16,19 @@ const CartItem = ({ item, cart, setCart }) => {
   });
 
   const updateCart = () => {
-    setCart(
-      cart.map((cartItem) => {
-        if (cartItem.key === item.key) {
-          const newItem = { ...cartItem };
-          newItem.quantity = quantity;
-          return newItem;
-        } else {
-          return cartItem;
-        }
-      })
-    );
+    if (quantity !== item.quantity) {
+      setCart(
+        cart.map((cartItem) => {
+          if (cartItem.key === item.key) {
+            const newItem = { ...cartItem };
+            newItem.quantity = quantity;
+            return newItem;
+          } else {
+            return cartItem;
+          }
+        })
+      );
+    }
   };
 
   return (
