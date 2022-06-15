@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Quantity from './Quantity';
 import '../styles/CartItem.css';
 
@@ -9,25 +9,23 @@ const CartItem = ({ item, cart, setCart }) => {
     setCart(cart.filter((filterItem) => filterItem.key !== item.key));
   };
 
-  useEffect(() => {
-    if (item.quantity === 0) {
-      removeFromCart();
-    }
-  });
-
   const updateCart = () => {
     if (quantity !== item.quantity) {
-      setCart(
-        cart.map((cartItem) => {
-          if (cartItem.key === item.key) {
-            const newItem = { ...cartItem };
-            newItem.quantity = quantity;
-            return newItem;
-          } else {
-            return cartItem;
-          }
-        })
-      );
+      if (quantity === 0) {
+        removeFromCart();
+      } else {
+        setCart(
+          cart.map((cartItem) => {
+            if (cartItem.key === item.key) {
+              const newItem = { ...cartItem };
+              newItem.quantity = quantity;
+              return newItem;
+            } else {
+              return cartItem;
+            }
+          })
+        );
+      }
     }
   };
 
