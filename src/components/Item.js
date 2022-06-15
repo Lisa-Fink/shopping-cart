@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../styles/Item.css';
+import Quantity from './Quantity';
 
 const Item = (props) => {
   const [quantity, setQuantity] = useState(1);
@@ -29,37 +30,7 @@ const Item = (props) => {
       </div>
       <div className="item-name">{props.item.name}</div>
       <div className="item-desc">{props.item.desc}</div>
-      <div className="quantity">
-        <span>Quantity</span>
-        <input
-          className="quantity-inpt"
-          type="text"
-          value={quantity}
-          onChange={(e) =>
-            e.target.value.match(/\d+/) | (e.target.value === '')
-              ? setQuantity(Number(e.target.value))
-              : quantity
-          }
-        />
-        <div className="arrows">
-          <span
-            onClick={() => {
-              setQuantity(quantity + 1);
-            }}
-          >
-            &#9650;
-          </span>
-          <span
-            onClick={() => {
-              if (quantity > 1) {
-                setQuantity(quantity - 1);
-              }
-            }}
-          >
-            &#9660;
-          </span>
-        </div>
-      </div>
+      <Quantity quantity={quantity} setQuantity={setQuantity} />
       <button className="add" onClick={addToCart}>
         Add to Cart
       </button>
