@@ -1,5 +1,6 @@
 {
   "name": "shopping-cart",
+  "homepage": "http://octavedown.github.io/shopping-cart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
