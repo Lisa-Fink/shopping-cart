@@ -11,7 +11,7 @@ const Home = () => {
         <h2>
           Your best source for <span>FASHION</span>
         </h2>
-        <Link to="/shop">
+        <Link to="./shop">
           <button id="shop">Shop Now</button>
         </Link>
       </div>

@@ -7,9 +7,9 @@ const Nav = ({ cartSize }) => {
     <nav>
       <h1>FakeStore</h1>
       <div id="links">
-        <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/cart">
+        <Link to="shopping-cart/">Home</Link>
+        <Link to="shopping-cart/shop">Shop</Link>
+        <Link to="shopping-cart/cart">
           <button>Cart {cartSize}</button>
         </Link>
       </div>

@@ -15,10 +15,13 @@ function App() {
     <BrowserRouter>
       <Nav cartSize={cartSize} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop cart={cart} setCart={setCart} />} />
+        <Route path="shopping-cart/" element={<Home />} />
         <Route
-          path="/cart"
+          path="shopping-cart/shop"
+          element={<Shop cart={cart} setCart={setCart} />}
+        />
+        <Route
+          path="shopping-cart/cart"
           element={<Cart cart={cart} setCart={setCart} cartSize={cartSize} />}
         />
       </Routes>
